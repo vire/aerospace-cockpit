@@ -1,12 +1,31 @@
 {
-  "name": "aerospace-cockpit",
+  "name": "@vire/aerospace-cockpit",
+  "version": "0.1.0",
   "description": "Live web dashboard for AeroSpace tiling window manager on macOS",
   "module": "server.ts",
   "type": "module",
   "license": "MIT",
-  "private": true,
+  "bin": {
+    "aerospace-cockpit": "./server.ts"
+  },
+  "files": [
+    "server.ts",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "dev": "bun run --watch server.ts"
+  },
+  "keywords": [
+    "aerospace",
+    "tiling-window-manager",
+    "macos",
+    "dashboard",
+    "bun"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vire/aerospace-cockpit"
   },
   "devDependencies": {
     "@types/bun": "latest"
