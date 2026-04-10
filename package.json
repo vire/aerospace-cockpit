@@ -1,7 +1,9 @@
 {
   "name": "aerospace-cockpit",
+  "description": "Live web dashboard for AeroSpace tiling window manager on macOS",
   "module": "server.ts",
   "type": "module",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "bun run --watch server.ts"
