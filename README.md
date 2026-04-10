@@ -11,20 +11,38 @@ A live web dashboard for [AeroSpace](https://github.com/nikitabobko/AeroSpace) t
 - Auto-refreshes every 1.5 seconds
 - Zero dependencies — just Bun + the `aerospace` CLI
 
+## Quick Start
+
+```bash
+bunx @vire/aerospace-cockpit
+```
+
+Or with npx (requires Bun on PATH):
+
+```bash
+npx @vire/aerospace-cockpit
+```
+
+Open http://localhost:8888
+
 ## Requirements
 
 - [Bun](https://bun.sh) (tested with 1.3.x)
 - [AeroSpace](https://github.com/nikitabobko/AeroSpace) installed and running
 
-## Usage
+## Development
 
 ```bash
+git clone https://github.com/vire/aerospace-cockpit.git
+cd aerospace-cockpit
 bun install
 bun run dev
 ```
 
-Open http://localhost:8888
-
 ## API
 
 `GET /api/state` returns the full AeroSpace state as JSON — monitors, workspaces, windows, and which is currently focused.
+
+## License
+
+MIT
